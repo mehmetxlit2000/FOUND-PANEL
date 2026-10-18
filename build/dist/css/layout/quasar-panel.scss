@@ -1,0 +1,258 @@
+section#q-panel{
+  width: 100%;
+  height: calc(100dvh - 135px);
+  //position: relative;
+  //z-index: 100;
+  .q-container{
+    width: calc(100% - 56px);
+    height: auto;
+    max-width: 1600px;
+    margin: 0 auto;
+    position:relative;
+    @include lg(){
+      width: calc(100% - 14px);
+    }
+    .q-content{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+      //background-color: red;
+      @include lg(){
+        flex-direction: row-reverse;
+      }
+      .q-left{
+        @include lg(){
+          display: none;
+          background-color: #000000;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 9999;
+          overflow: hidden;
+        }
+        &.active{
+          display: flex;
+        }
+        .q-sidebar{
+          width: 230px; /* (1/φ²) */
+          height: 150%;
+          border: 0.5px solid transparent;
+          border-image: url("https://i.pinimg.com/originals/66/a5/89/66a5892c919c794f8d55e99ece6de86b.gif") 1 stretch;
+          border-top: none;
+          overflow-y: scroll;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .q-container{
+            width: 100%;
+            height: auto;
+            .q-content{
+              width: 100%;
+              height: calc(var(--quaVh, 1vh) * 100 - 135px);
+              max-height: 828px;
+              padding-top: 15px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 25px;
+              .q-category_groups{
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .q-category_title_groups{
+                  width: 100%;
+                  padding: 5px 10px;
+                  //border-bottom: 0.5px solid var(--quasar-b3);
+                  border-bottom: 0.5px solid transparent;
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  .q-image_groups{
+                    width: 100%;
+                    max-width: 30px;
+                    display: flex;
+                    flex-shrink: 0;
+                    .q-category_title_groups_svg{
+                      width: 100%;
+                      aspect-ratio: 1/1;
+                      fill: var(--quasar);
+                      stroke: var(--quasar);
+                      stroke-width: 1.5;
+                      &.st{
+                        fill: none;
+                        stroke: var(--quasar);
+                        stroke-width: 1.5;
+                      }
+                    }
+                  }
+                  .q-category_title{
+                    font-family: 'Bruno Ace SC', sans-serif;
+                    font-weight: 500;
+                    font-size: 21px;
+                    color: var(--quasar);
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                }
+                ul{
+                  width: 100%;
+                  padding: 0 1px;
+                  margin-top: 10px;
+                  .q-type_groups{
+                    width: 100%;
+                    padding: 10px 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: transparent;
+                    border: none;
+                    &:hover{
+                      border-left: 3px solid var(--quasar);
+                    }
+                    &.quasar-active{
+                      border-left: 3px solid var(--quasar);
+                    }
+                    .q-image_groups{
+                      width: 100%;
+                      max-width: 25px;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      align-items: center;
+                      flex-shrink: 0;
+                      .q-type_groups_svg{
+                        width: 100%;
+                        aspect-ratio: 1/1;
+                        fill: var(--quasar);
+                        &.st{
+                          fill: none;
+                          stroke: var(--quasar);
+                          stroke-width: 1.5;
+                        }
+                      }
+                    }
+                    .q-type_title{
+                      font-family: 'Montserrat', sans-serif;
+                      font-weight: 500;
+                      font-size: 16px;
+                      color: var(--quasar);
+                      display: -webkit-box;
+                      -webkit-line-clamp: 1;
+                      -webkit-box-orient: vertical;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                    }
+                  }
+                }
+
+              }
+              .q-side_bar_skeleton_groups{
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .q-up{
+                  width: 100%;
+                  padding-bottom: 10px;
+                  border-bottom: 1px solid var(--quasar);
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 5px;
+                  .b1{
+                    width: 100%;
+                    height: 30px;
+                    //background-color: var(--quasar);
+                    &.t1{
+                      width: 100%;
+                      aspect-ratio: 1/1;
+                      max-width: 30px;
+                      border-radius: 50%;
+                    }
+                  }
+                }
+                .q-cards{
+                  width: 100%;
+                  padding: 0 1px;
+                  margin-top: 15px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  gap: 10px;
+                  .q-side_bar_skeleton_group{
+                    width: 100%;
+                    //padding: 10px 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    .q-side_bar_skeleton{
+                      width: 100%;
+                      height: 20px;
+                      //background-color: var(--quasar);
+                      &.b2.t1{
+                        width: 100%;
+                        aspect-ratio: 1/1;
+                        max-width: 20px;
+                        border-radius: 50%;
+                      }
+                    }
+                  }
+                }
+
+              }
+
+            }
+          }
+        }
+      }
+      .q-right{
+        width: 100%;
+        height: calc(100dvh - 135px);
+        box-sizing: border-box;
+        max-height: 828px;
+        padding: 30px 50px;
+        border: 0.5px solid transparent;
+        border-image: url("https://i.pinimg.com/originals/66/a5/89/66a5892c919c794f8d55e99ece6de86b.gif") 1 stretch;
+        border-left: none;
+        border-top: none;
+        overflow-y: scroll;
+        color: var(--quasar);
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        //.q
+        //.q-panel_title{
+        //  align-self: flex-start;
+        //  font-family: 'Bruno Ace SC', sans-serif;
+        //  font-weight: 700;
+        //  font-size: 21px;
+        //  white-space: nowrap;
+        //  color: var(--quasar);
+        //  background: var(--quasar);
+        //  -webkit-background-clip: text;
+        //  -webkit-text-fill-color: transparent;
+        //}
+        @include lg(){
+          //border-left: 0.5px solid var(--quasar-b3);
+          border: none;
+        }
+      }
+    }
+  }
+}
