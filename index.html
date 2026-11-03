@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <!-- ========== KRİTİK: ilk 1024 byte içinde olmalı ========== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- ========== TEMEL SEO ========== -->
+  <title>Quasar</title>
+  <meta name="author" content="QUASAR">
+  <meta name="description" content="Quasar Dashboard">
+  <link rel="canonical" href="https://mehmetxlit2000.github.io/quasar-dashboard/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="generator" content="Quasar Tarafından Yazıldı">
+
+  <!-- Çok dilli site varsa hreflang (yoksa silebilirsin) -->
+  <link rel="alternate" hreflang="tr" href="https://mehmetxlit2000.github.io/quasar-dashboard/">
+  <link rel="alternate" hreflang="en" href="https://mehmetxlit2000.github.io/quasar-dashboard/en/">
+  <link rel="alternate" hreflang="x-default" href="https://mehmetxlit2000.github.io/quasar-dashboard/">
+
+  <!-- ========== FAVICON & PWA ========== -->
+  <link rel="manifest" href="quasar.webmanifest">
+  <meta name="theme-color" content="#000">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="build/assets/settings/icon-192.png">
+
+  <!-- ========== OPEN GRAPH (Facebook, LinkedIn, WhatsApp...) ========== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Quasar">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Quasar Dashboard | Quasar">
+  <meta property="og:description" content="Quasar arayüzüne hoşgeldiniz.">
+  <meta property="og:url" content="https://mehmetxlit2000.github.io/quasar-dashboard/">
+  <meta property="og:image" content="https://www.ornek.com/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Quasar Logo">
+
+  <!-- ========== TWITTER / X CARD ========== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quasar Dashboard | Quasar">
+  <meta name="twitter:description" content="Quasar arayüzüne hoşgeldiniz.">
+  <meta name="twitter:image" content="https://www.ornek.com/img/og-image.jpg">
+
+  <!-- ========== YAPILANDIRILMIŞ VERİ (JSON-LD) ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mehmetxlit2000.github.io/quasar-dashboard/#organization",
+          "name": "QUASAR",
+          "url": "https://mehmetxlit2000.github.io/quasar-dashboard/",
+          "logo": "https://mehmetxlit2000.github.io/quasar-dashboard/icons/icon-192.png",
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mehmetxlit2000.github.io/quasar-dashboard/#website",
+          "url": "https://mehmetxlit2000.github.io/quasar-dashboard/",
+          "name": "Quasar Dashboard",
+          "inLanguage": "tr-TR",
+          "publisher": { "@id": "https://mehmetxlit2000.github.io/quasar-dashboard/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mehmetxlit2000.github.io/quasar-dashboard/#webpage",
+          "url": "https://mehmetxlit2000.github.io/quasar-dashboard/",
+          "name": "Quasar Dashboard",
+          "description": "Quasar arayüzüne hoşgeldiniz.",
+          "inLanguage": "tr-TR",
+          "isPartOf": { "@id": "https://mehmetxlit2000.github.io/quasar-dashboard/#website" }
+        }
+      ]
+    }
+  </script>
+
+  <!-- ========== CSS: kritik CSS inline, gerisi render'ı bloklamadan ========== -->
+  <link rel="stylesheet" href="build/dist/css/main.css">
+  <style>
+    .q-dash-frame{
+      display: none;
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+    }
+    .q-dash-img{
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+      object-fit: contain;
+    }
+  </style>
+
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+
+  <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+
+</head>
+
+  <body quasar-performance="false" quasar-thema="main" quasar-observer="'QuasarSynapseTem','#q-synapse-container','build/dist/css/static/synapse.css','build/dist/js/layout/QuasarSynapseCanvas.js'">
+<!--<body quasar-performance="false" >-->
+<!--<div quasar-observer="'QuasarQuiz','#q-panel .q-right', 'build/dist/css/static/quiz.css', 'null'"></div>-->
+<section id="q-synapse-container"></section>
+
+<header id="q-header" quasar-observer="'null','null','null','build/dist/js/layout/QuasarHeaderCanvas.js'">
+  <div class="q-container">
+    <div class="q-edge"></div>
+    <canvas id="q-stars" class="__quasar__performance__" aria-hidden="true"></canvas>
+    <div class="q-content">
+      <div class="q-left">
+        <div class="q-image-group">
+          <svg class="q-header_img" version="1.1" viewBox="0 0 2048 1209" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <!-- Define the linear gradient with brighter colors -->
+              <linearGradient id="vibrantGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop class="color" offset="0%" style="stop-color:#880216; stop-opacity:1"></stop> <!-- Dark Purple -->
+                <stop class="color-2" offset="50%" style="stop-color:#410404; stop-opacity:1"></stop> <!-- Bright Purple -->
+                <stop class="color-3" offset="100%" style="stop-color:rgba(33,1,1,0.99); stop-opacity:1"></stop> <!-- Bright Pink -->
+              </linearGradient>
+            </defs>
+            <defs>
+              <!-- Define the linear gradient with brighter colors -->
+              <linearGradient id="texttGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff0217; stop-opacity:1"></stop> <!-- Dark Purple -->
+                <stop offset="100%" style="stop-color:#c2082a; stop-opacity:1"></stop> <!-- Bright Pink -->
+              </linearGradient>
+            </defs>
+
+            <!-- Apply the vibrant gradient to your paths -->
+            <path transform="translate(981,156)" d="m0 0h43l45 1 41 2 33 3 34 5 36 7 32 8 26 9 21 9 19 10 19 12 17 13 13 12 15 15 13 17 9 13 10 17 9 19 10 26 9 30 8 36 6 37 3 31 1 23 2 17 5 12 17 37 11 25 18 40 16 35 12 27 1 4-6 3-7-1-6-9-12-26-27-60-16-37-6-17 3 12-1 61-2 55-3 38-4 33-6 36-7 30-9 30-10 26-12 25-11 18-9 12-8 10-11 12-13 13-10 8-17 12-15 9-17 9-28 11-27 9-28 7-27 5-37 5-43 4-34 2-28 1h-64l-49-2-42-3-27-3-33-5-29-6-26-7-21-7-31-13-23-12-17-12-10-8-12-11-17-17-11-14-8-11-9-15-13-27-11-29-8-27-8-36-5-31-5-46-13-1-16-5-16-8-8-6-8-8-7-11-5-12-4-17-1-6v-138h13l2 4v30l1 103 2 13 5 13 6 11 8 9 14 8 13 4 13 3-2-32-1-47v-22l1-49 3-52 5-46 6-35 8-34 8-26 10-26 13-27 12-19 9-12 11-13 7-7 6-7 8-7 15-12 15-10 17-10 23-11 28-10 38-10 29-6 41-6 36-3 37-2z" fill="url(#vibrantGradient)"></path>
+            <path transform="translate(1143,498)" d="m0 0h21l19 3 18 6 14 7 3 3v6l-4 7-6-2-14-7-18-5-13-2h-19l-18 4-12 6-9 8-5 10-1 4v18l5 10 8 7 16 8 19 6 36 10 17 7 11 7 7 6 7 11 3 9 1 13-2 12-5 12-6 8-7 7-13 8-15 5-10 2-12 1h-13l-18-2-19-5-17-8-12-9-3-3-1-5 5-8 6 1 10 8 16 8 14 4 23 3h12l17-3 11-4 9-6 7-8 4-10 1-4v-11l-4-11-7-8-14-8-29-9-31-8-17-7-12-8-7-7-5-8-4-13v-17l3-11 5-10 7-9 12-9 11-5 15-4z" fill="url(#texttGradient)"></path>
+            <path transform="translate(194,500)" d="m0 0h14l1 4v129l7-6 21-21 7-8 26-26 7-8 21-21 7-8 13-13 2-3h2l1-3h2l2-4 12-11 3-1h16l-6 7-24 24-7 8-12 12-7 8-25 25-7 8-3 4 9 11 12 14 9 11 11 12 9 11 13 15 9 11 11 12 9 11 3 4v3h-11l-7-4-10-10-9-11-13-14-9-11-12-13-9-11-13-14-9-11-5-4-37 37-7 8-2 4-1 53-2 1h-7l-5-2-1-3v-205z" fill="url(#texttGradient)"></path>
+            <path transform="translate(637,499)" d="m0 0h13l2 1v136l-3 18-5 14-6 11-7 9-8 8-13 8-12 5-12 3-9 1h-13v7h-1l-1-8-13-1-16-5-16-8-8-6-8-8-7-11-5-12-4-17-1-6v-138h13l2 4v30l1 103 2 13 5 13 6 11 8 9 14 8 13 4 13 3 1-3h22l13-4 13-7 7-6 9-13 6-16 2-12 1-12 1-125z" fill="url(#texttGradient)"></path>
+            <path transform="translate(1661,500)" d="m0 0h70l17 1 20 4 15 6 11 7 8 7 9 13 5 14 1 5v30l-5 15-7 11-13 13-10 6-9 4 1 7 14 20 12 17 14 19 5 8-1 2-9 1-7-4-14-19-13-18-12-17-7-9-2-1h-79v22l-1 44-5 3-9-1-1-81 10-1 80-1 15-3 12-5 9-6 9-9 6-13 2-8v-23l-3-11-5-10-9-10-9-6-10-4-19-4-87-2-1-1v-10z" fill="url(#texttGradient)"></path>
+            <path transform="translate(865,499)" d="m0 0h12l4 4 13 28 15 33 36 78 13 28 16 35 1 6h-16l-9-17-15-33-13-29-17-37-15-33-16-35-3-7-13 28-16 36-12 26-15 33-17 37-12 26-3 5h-15l-1-3 15-33 16-35 13-28 14-31 6-12 13-29 12-26 7-14z" fill="url(#texttGradient)"></path>
+            <path transform="translate(1426,499)" d="m0 0h12l5 5 8 14 1 4h2l3 12 11 23 16 36 13 29 19 42 16 35 3 9-6 3-7-1-6-9-12-26-27-60-16-37-6-17 3 12-2 1-8-20-11-25-4-8-3 4-11 25-19 42-17 37-15 33-12 27-9 19-3 3-8 1-7-2 1-7 8-16 9-20 18-39 32-69 17-37 9-20z" fill="url(#texttGradient)"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="q-right">
+        <button class="q-langue-container" onclick="QuasarScriptorium('template','.q-langue-container-relative',null,'build/dist/js/layout/test.js')" aria-label="Dil seç" aria-haspopup="true" aria-expanded="false" aria-controls="q-langue-list">
+          <div class="q-image-groups">
+            <img class="q-flag-main q-flag-image" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/960px-Flag_of_Turkey.svg.png?utm_source=tr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="">
+          </div>
+          <div id="q-langue-list" class="q-langue-container-relative" role="listbox"></div>
+        </button>
+        <div class="q-image-group">
+          <img class="q-user-profile-img" src="https://i.pinimg.com/originals/fa/26/fc/fa26fc3a5eafa8f6c1a2d9b06881502e.gif" alt="profil resmi" fetchpriority="high">
+        </div>
+        <div class="q-image-group-svg" onclick="QuasarScriptorium(null,null,null,'build/dist/js/layout/QuasarSideBar.js')">
+          <svg class="q-hamburger-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-label="Menü aç" aria-haspopup="true" aria-expanded="false" aria-controls="q-sidebar">
+            <line x1="5" y1="10" x2="35" y2="10"  stroke-linecap="round"/>
+            <line x1="17" y1="20" x2="35" y2="20" stroke-linecap="round"/>
+            <line x1="24" y1="30" x2="35" y2="30" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<section id="q-panel" quasar-observer="'null','null','null','build/dist/js/layout/QuasarPanelData.js'">
+  <div class="q-container">
+    <div class="q-content"  >
+      <div class="q-left" id="q-sidebar">
+        <nav class="q-sidebar" >
+          <div class="q-container">
+            <div id="q-side_bar"  class="q-content __quasar__scroll__x">
+              <div class="q-side_bar_skeleton_groups">
+                <div class="q-up">
+                  <div class="q-side_bar_skeleton __quasar__skeleton b1 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b1"></div>
+                </div>
+
+                <div class="q-cards">
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="q-side_bar_skeleton_groups">
+                <div class="q-up">
+                  <div class="q-side_bar_skeleton __quasar__skeleton b1 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b1"></div>
+                </div>
+
+                <div class="q-cards">
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="q-side_bar_skeleton_groups">
+                <div class="q-up">
+                  <div class="q-side_bar_skeleton __quasar__skeleton b1 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b1"></div>
+                </div>
+
+                <div class="q-cards">
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="q-side_bar_skeleton_groups">
+                <div class="q-up">
+                  <div class="q-side_bar_skeleton __quasar__skeleton b1 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b1"></div>
+                </div>
+
+                <div class="q-cards">
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                  <div class="q-side_bar_skeleton_group">
+                    <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="q-right" style="padding: 0">
+        <iframe
+                width="100%"
+                height="100vh"
+                title="blackhole"
+                frameborder="0"
+                allowfullscreen
+                class="q-dash-frame"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                data-src="https://mehmetxlit2000.github.io/BLACK-HOLE-MODEL-1/">
+        </iframe>
+        <img src="https://i.pinimg.com/originals/63/47/84/6347845a7f9c0c67c9452f15354a0bb0.gif" class="q-dash-img __quasar__color__filter">
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dart.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/delphi.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/x86asm.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/armasm.min.js" defer></script>
+<script id="quasar-main-js">
+
+  if (document.body.getAttribute('quasar-thema') === "dark") {
+    document.addEventListener("DOMContentLoaded", () => {
+      const QuasarIframe = document.querySelector('.q-dash-frame');
+      if (QuasarIframe && QuasarIframe.dataset.src) {
+        QuasarIframe.src = QuasarIframe.dataset.src;
+      }
+    });
+  }
+
+</script>
+
+<!--<script>-->
+<!--  const jsContainer = document.getElementById('quasar-main-js');-->
+
+<!--  const links = [-->
+<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",-->
+<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dart.min.js",-->
+<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/delphi.min.js",-->
+<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/x86asm.min.js",-->
+<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/armasm.min.js"-->
+
+<!--  ];-->
+
+<!--  links.forEach(l => {-->
+<!--    let scriptLink = document.createElement('script');-->
+<!--    scriptLink.src = l;-->
+<!--    scriptLink.type = 'text/javascript';-->
+<!--    scriptLink.async = false;-->
+<!--    jsContainer.insertAdjacentElement('beforebegin', scriptLink)-->
+<!--  });-->
+<!--</script>-->
+
+<script type="text/javascript" src="build/dist/js/core/QuasarScriptorium.js" defer></script>
+
+<!--<script type="text/javascript" src="build/dist/js/layout/panelData.js" defer></script>-->
+<script type="text/javascript" src="build/dist/js/layout/vh.js" defer></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "Quasar Dash",
+  "short_name": "Quasar Dashboard",
+  "description": "Quasar arayüzleri paneli.",
+  "lang": "tr",
+  "dir": "ltr",
+  "id": "/",
+  "start_url": "./index.html?kaynak=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#000",
+  "theme_color": "#000",
+  "categories": ["education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Alanlar Bölümü",
+      "short_name": "Alanlar",
+      "url": "./index.html#alanlar",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
