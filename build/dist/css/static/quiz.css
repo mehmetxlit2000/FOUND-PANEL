@@ -1,0 +1,38 @@
+.q-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .q-not-title{
+        margin-top: 15px;
+        font-family: 'Roboto Light',sans-serif;
+        font-weight: 700;
+        fill-size:  22px;
+        line-height: 1.5;
+        color: var(--quasar);
+    }
+    .q-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+        .q-not{
+            font-family: 'Roboto Light',sans-serif;
+            font-weight: 500;
+            font-size:  15px;
+            color: var(--quasar);
+            &:hover{
+                transition: 0.3s ease all;
+                filter: brightness(155%);
+            }
+            .q-not-title{
+                font-size:  15.5px;
+            }
+            .q-not-comment{
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+/*
+Error: Undefined mixin 'lg'.
+        on line 12 of quasar-panel.scss, in `lg'
+        from line 12 of quasar-panel.scss
+
+7:     width: calc(100% - 56px);
+8:     height: auto;
+9:     max-width: 1700px;
+10:     margin: 0 auto;
+11:     position:relative;
+12:     @include lg(){
+13:       width: calc(100% - 14px);
+14:     }
+15:     .q-content{
+16:       width: 100%;
+17:       height: auto;
+
+Backtrace:
+quasar-panel.scss:12:in `lg'
+quasar-panel.scss:12
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in 'block in Sass::Tree::Visitors::Perform#visit_mixin'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in 'block in Sass::Stack#with_mixin'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in 'Sass::Stack#with_mixin'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in 'Sass::Tree::Visitors::Perform#visit_mixin'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_rule'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'Array#map'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block in Sass::Tree::Visitors::Perform#visit_rule'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in 'Sass::Tree::Visitors::Perform#visit_rule'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_rule'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'Array#map'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block in Sass::Tree::Visitors::Perform#visit_rule'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in 'Sass::Tree::Visitors::Perform#visit_rule'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in 'block in Sass::Tree::Visitors::Base#visit_children'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in 'Array#map'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in 'Sass::Tree::Visitors::Base#visit_children'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in 'block in Sass::Tree::Visitors::Perform#visit_children'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in 'Sass::Tree::Visitors::Perform#visit_children'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'block in Sass::Tree::Visitors::Base#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in 'Sass::Tree::Visitors::Perform#visit_root'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in 'Sass::Tree::Visitors::Perform#visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in 'Sass::Tree::Visitors::Perform.visit'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in 'Sass::Tree::RootNode#css_tree'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in 'Sass::Tree::RootNode#render_with_sourcemap'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in 'Sass::Engine#_render_with_sourcemap'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in 'Sass::Engine#render_with_sourcemap'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in 'Sass::Exec::SassScss#run'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in 'Sass::Exec::SassScss#process_result'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in 'Sass::Exec::Base#parse'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in 'Sass::Exec::Base#parse!'
+C:/Ruby40-x64/lib/ruby/gems/4.0.0/gems/sass-3.7.4/bin/sass:13:in '<top (required)>'
+C:/Ruby40-x64/lib/ruby/4.0.0/rubygems.rb:305:in 'Kernel#load'
+C:/Ruby40-x64/lib/ruby/4.0.0/rubygems.rb:305:in 'Gem.activate_and_load_bin_path'
+C:/Ruby40-x64/bin/sass:36:in '<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'lg'.\A         on line 12 of quasar-panel.scss, in `lg'\A         from line 12 of quasar-panel.scss\A \A 7:     width: calc(100% - 56px);\A 8:     height: auto;\A 9:     max-width: 1700px;\A 10:     margin: 0 auto;\A 11:     position:relative;\A 12:     @include lg(){\A 13:       width: calc(100% - 14px);\A 14:     }\A 15:     .q-content{\A 16:       width: 100%;\A 17:       height: auto;"; }
