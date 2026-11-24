@@ -1,0 +1,302 @@
+export const template = `
+<div class="q-cards">
+    <p class="q-not-title">BASİC ARİTHMETİC</p>
+    <!-- Üslü Sayılar -->
+    <div class="q-card">
+    <span class="q-not">$$a^n = \\underbrace{a \\cdot a \\cdot \\dots \\cdot a}_{n \\text{ tane}}$$</span>
+    <span class="q-not">$$a^1 = a$$</span>
+    <span class="q-not">$$a^0 = 1 \\quad (a \\neq 0)$$</span>
+    <span class="q-not">$$1^n = 1$$</span>
+    <span class="q-not">$$0^n = 0 \\quad (n > 0)$$</span>
+    <span class="q-not">$$a^{-n} = \\frac{1}{a^n}$$</span>
+    <span class="q-not">$$\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n$$</span>
+    <span class="q-not">$$a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$$</span>
+    <span class="q-not">$$a^n \\cdot a^m = a^{n+m}$$</span>
+    <span class="q-not">$$\\frac{a^n}{a^m} = a^{n-m}$$</span>
+    <span class="q-not">$$a^n \\cdot b^n = (a \\cdot b)^n$$</span>
+    <span class="q-not">$$\\frac{a^n}{b^n} = \\left(\\frac{a}{b}\\right)^n$$</span>
+    <span class="q-not">$$(a^n)^m = a^{n \\cdot m} = (a^m)^n$$</span>
+    <span class="q-not">$$a^x = a^y \\implies x = y \\quad (a \\notin \\{-1, 0, 1\\})$$</span>
+    <span class="q-not">$$x^n = y^n \\implies x = y \\quad (n = 2k+1)$$</span>
+    <span class="q-not">$$x^n = y^n \\implies x = \\pm y \\quad (n = 2k)$$</span>
+    </div>
+    <!-- Köklü Sayılar -->
+    <div class="q-card">
+    <span class="q-not">$$\\sqrt[n]{a^m} = a^{\\frac{m}{n}}$$</span>
+    <span class="q-not">$$\\sqrt[2n]{x^{2n}} = \\vert{}x\\vert{}$$</span>
+    <span class="q-not">$$\\sqrt[2n+1]{x^{2n+1}} = x$$</span>
+    <span class="q-not">$$a\\sqrt[n]{x} \\pm b\\sqrt[n]{x} = (a \\pm b)\\sqrt[n]{x}$$</span>
+    <span class="q-not">$$\\sqrt[n]{a} \\cdot \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}$$</span>
+    <span class="q-not">$$\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}} = \\sqrt[n]{\\frac{a}{b}}$$</span>
+    <span class="q-not">$$\\sqrt[n]{a^m} = \\sqrt[n \\cdot k]{a^{m \\cdot k}}$$</span>
+    <span class="q-not">$$\\sqrt[n]{\\sqrt[m]{a}} = \\sqrt[n \\cdot m]{a}$$</span>
+    <span class="q-not">$$\\sqrt{a \\pm 2\\sqrt{b}} = \\sqrt{x} \\pm \\sqrt{y} \\quad (x + y = a, \\; x \\cdot y = b, \\; x > y)$$</span>
+    <span class="q-not">$$(\\sqrt{a} - \\sqrt{b})(\\sqrt{a} + \\sqrt{b}) = a - b$$</span>
+    <span class="q-not">$$\\sqrt{a + \\sqrt{a + \\sqrt{a + \\dots}}} = \\frac{1 + \\sqrt{1 + 4a}}{2}$$</span>
+    <span class="q-not">$$\\sqrt{a + \\sqrt{a + \\sqrt{a + \\dots}}} = \\frac{1 - \\sqrt{1 + 4a}}{2}$$</span>
+    <span class="q-not">$$\\sqrt[n]{x \\cdot \\sqrt[n]{x \\cdot \\sqrt[n]{x \\cdot \\dots}}} = \\sqrt[n-1]{x}$$</span>
+    <span class="q-not">$$\\sqrt{x \\div \\sqrt{x \\div \\sqrt{x \\div \\dots}}} = \\sqrt[3]{x}$$</span>
+    </div>
+    <!-- Çarpanlara ayırma -->
+    <div class="q-card">
+    <span class="q-not">$$(a + b)^2 = a^2 + 2ab + b^2$$</span>
+    <span class="q-not">$$a^2 - b^2 = (a - b)(a + b)$$</span>
+    <span class="q-not">$$(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + ac + bc)$$</span>
+    </div>
+    
+    <!-- Eşitsizlik -->
+    <div class="q-card">
+    <span class="q-not">$$a < b \\implies a + c < b + c$$</span>
+    <span class="q-not">$$(a < b) \\land (c > 0) \\implies (a \\cdot c < b \\cdot c) \\land \\left(\\frac{a}{c} < \\frac{b}{c}\\right)$$</span>
+    <span class="q-not">$$(a < b) \\land (c < 0) \\implies (a \\cdot c > b \\cdot c) \\land \\left(\\frac{a}{c} > \\frac{b}{c}\\right)$$</span>
+    <span class="q-not">$$x \\in (a, b) \\iff a < x < b$$</span>
+    <span class="q-not">$$x \\in [a, b] \\iff a \\le x \\le b$$</span>
+    </div>
+    
+    <!-- Mutlak Değer -->
+    <div class="q-card">
+    <span class="q-not">$$\\vert{}x\\vert{} = \\sqrt{x^2}$$</span>
+    <span class="q-not">$$\\vert{}x\\vert{} = \\begin{cases} x, & x \\ge 0 \\\\ -x, & x < 0 \\end{cases}$$</span>
+    <span class="q-not">$$\\vert{}x\\vert{} = \\vert{}-x\\vert{}$$</span>
+    <span class="q-not">$$\\vert{}x \\cdot y\\vert{} = \\vert{}x\\vert{} \\cdot \\vert{}y\\vert{}$$</span>
+    <span class="q-not">$$\\left\\vert{}\\frac{x}{y}\\right\\vert{} = \\frac{\\vert{}x\\vert{}}{\\vert{}y\\vert{}}, \\quad y \\neq 0$$</span>
+    <span class="q-not">$$\\vert{}x + y\\vert{} \\le \\vert{}x\\vert{} + \\vert{}y\\vert{}$$</span>
+    <span class="q-not">$$\\vert{}\\vert{}x\\vert{} - \\vert{}y\\vert{}\\vert{} \\le \\vert{}x - y\\vert{}$$</span>
+    <span class="q-not">$$\\vert{}x\\vert{} = a \\implies x \\in \\{a, -a\\}, \\quad a \\ge 0$$</span>
+    <span class="q-not">$$\\vert{}x\\vert{} < a \\implies -a < x < a, \\quad a > 0$$</span>
+    <span class="q-not">$$\\vert{}x\\vert{} > a \\implies x > a \\lor x < -a, \\quad a > 0$$</span>
+    </div>
+    
+    <!-- Kümeler -->
+    <div class="q-card">
+    <span class="q-not">$$A \\cup B = \\{x \\mid x \\in A \\lor x \\in B\\}$$</span>
+    <span class="q-not">$$A \\cap B = \\{x \\mid x \\in A \\land x \\in B\\}$$</span>
+    <span class="q-not">$$A \\setminus B = \\{x \\mid x \\in A \\land x \\notin B\\}$$</span>
+    <span class="q-not">$$A^\\complement = U \\setminus A = \\{x \\mid x \\in U \\land x \\notin A\\}$$</span>
+    <span class="q-not">$$A \\cup B = B \\cup A$$</span>
+    <span class="q-not">$$A \\cap B = B \\cap A$$</span>
+    <span class="q-not">$$(A \\cup B) \\cup C = A \\cup (B \\cup C)$$</span>
+    <span class="q-not">$$(A \\cap B) \\cap C = A \\cap (B \\cap C)$$</span>
+    <span class="q-not">$$A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$$</span>
+    <span class="q-not">$$(A \\cup B)^\\complement = A^\\complement \\cap B^\\complement$$</span>
+    <span class="q-not">$$A \\triangle B = (A \\setminus B) \\cup (B \\setminus A) = (A \\cup B) \\setminus (A \\cap B)$$</span>
+    <span class="q-not">$$A \\times B = \\{(a, b) \\mid a \\in A \\land b \\in B\\}$$</span>
+    <span class="q-not">$$s(A \\cup B) = s(A) + s(B) - s(A \\cap B)$$</span>
+    <span class="q-not">$$s(A \\times B) = s(A) \\cdot s(B)$$</span>
+    </div>
+    
+    <!-- İkinci dereceden denklemler -->
+    <div class="q-card">
+    <span class="q-not">$$ax^2 + bx + c = 0 \\land a \\neq 0$$</span>
+    <span class="q-not">$$\\Delta = b^2 - 4ac$$</span>
+    <span class="q-not">$$\\Delta > 0 \\implies x_{1,2} = \\frac{-b \\pm \\sqrt{\\Delta}}{2a} \\land (x_1 \\neq x_2 \\land \\{x_1, x_2\\} \\subset \\mathbb{R})$$</span>
+    <span class="q-not">$$\\Delta = 0 \\implies x_1 = x_2 = -\\frac{b}{2a} \\land x_1 \\in \\mathbb{R}$$</span>
+    <span class="q-not">$$\\Delta < 0 \\implies x_{1,2} = \\frac{-b \\mp i\\sqrt{\\vert{}\\Delta\\vert{}}}{2a} \\land i^2 = -1 \\land (x_1 = \\bar{x}_2)$$</span>
+    <span class="q-not">$$S = x_1 + x_2 = -\\frac{b}{a}$$</span>
+    <span class="q-not">$$P = x_1 \\cdot x_2 = \\frac{c}{a}$$</span>
+    <span class="q-not">$$\\vert{}x_1 - x_2\\vert{} = \\frac{\\sqrt{\\Delta}}{\\vert{}a\\vert{}}$$</span>
+    <span class="q-not">$$x^2 - Sx + P = 0 \\iff x^2 - (x_1 + x_2)x + (x_1 \\cdot x_2) = 0$$</span>
+    <span class="q-not">$$ax^4 + bx^2 + c = 0 \\land (x^2 = t) \\implies at^2 + bt + c = 0$$</span>
+    <span class="q-not">$$i = \\sqrt{-1} \\land i^2 = -1$$</span>
+    <span class="q-not">$$i^{4k} = 1 \\land i^{4k+1} = i \\land i^{4k+2} = -1 \\land i^{4k+3} = -i \\quad (k \\in \\mathbb{Z})$$</span>
+    <span class="q-not">$$z = a + bi \\land \\{a, b\\} \\subset \\mathbb{R}$$</span>
+    <span class="q-not">$$\\text{Re}(z) = a \\land \\text{Im}(z) = b$$</span>
+    <span class="q-not">$$z = a + bi \\implies \\bar{z} = a - bi$$</span>
+    <span class="q-not">$$z \\cdot \\bar{z} = (a + bi)(a - bi) = a^2 + b^2$$</span>
+    </div>
+    
+    <!-- Parabol -->
+    <div class="q-card">
+    <span class="q-not">$$f(x) = ax^2 + bx + c \\quad (a, b, c \\in \\mathbb{R} \\land a \\neq 0)$$</span>
+    <span class="q-not">$$a > 0 \\implies \\bigcup \\quad \\land \\quad a < 0 \\implies \\bigcap$$</span>
+    <span class="q-not">$$T(r,k), r = -\\frac{b}{2a} = \\frac{x_1 + x_2}{2}, k = f(r) = f\\left(-\\frac{b}{2a}\\right) = \\frac{4ac - b^2}{4a} = -\\frac{\\Delta}{4a}$$</span>
+    <span class="q-not">$$\\Delta > 0 \\implies f(x) \\cap Ox = \\{(x_1, 0), (x_2, 0)\\} \\land x_1 \\neq x_2$$</span>
+    <span class="q-not">$$\\Delta = 0 \\implies f(x) \\text{ teğet } Ox \\implies T(r, 0) \\land r = -\\frac{b}{2a}$$</span>
+    <span class="q-not">$$\\Delta < 0 \\implies f(x) \\cap Ox = \\emptyset$$</span>
+    <span class="q-not">$$f(x) = a(x - x_1)(x - x_2), f(x) = a(x - r)^2 + k$$</span>
+    <span class="q-not">$$f(r - x) = f(r + x)$$</span>
+    <span class="q-not">$$a > 0 \\implies f_{\\min} = k = f(r), a < 0 \\implies f_{\\max} = k = f(r)$$</span>
+    </div>
+    
+    <!-- Fonksiyon -->
+    <div class="q-card">
+    <span class="q-not">$$f: A \\to B, \\forall x \\in A, \\exists! y \\in B \\implies f(x) = y \\land f(A) = \\{y \\in B \\mid \\exists x \\in A \\land f(x) = y\\}$$</span>
+    <span class="q-not">$$\\text{Bire Bir:} \\quad \\forall x_1, x_2 \\in A, \\quad (f(x_1) = f(x_2) \\implies x_1 = x_2)$$</span>
+    <span class="q-not">$$\\text{Örten:} \\quad \\forall y \\in B, \\quad \\exists x \\in A : f(x) = y$$</span>
+    <span class="q-not">$$\\text{Bileşke:} \\quad (f \\circ g)(x) = f(g(x))$$</span>
+    <span class="q-not">$$\\text{Ters:} \\quad f^{-1}: B \\to A \\iff \\left(f(x) = y \\iff f^{-1}(y) = x\\right)$$</span>
+    <span class="q-not">$$(f \\circ f^{-1})(x) = (f^{-1} \\circ f)(x) = x$$</span>
+    <span class="q-not">$$(f \\circ g)^{-1}(x) = (g^{-1} \\circ f^{-1})(x)$$</span>
+    </div>
+    
+    <!-- Permütasyon (Sıralama), Kombinasyon (Seçme) ve Binom -->
+    <div class="q-card">
+    <span class="q-not">$$P(n, r) = \\frac{n!}{(n-r)!}$$</span>
+    <span class="q-not">$$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$$</span>
+    <span class="q-not">$$\\binom{n}{0} = \\binom{n}{n} = 1$$</span>
+    <span class="q-not">$$\\binom{n}{r} = \\binom{n}{n-r}$$</span>
+    <span class="q-not">$$\\left[\\binom{n}{a} = \\binom{n}{b}\\right] \\implies (a = b) \\lor (a + b = n)$$</span>
+    <span class="q-not">$$\\sum_{r=0}^{n} \\binom{n}{r} = 2^n$$</span>
+    <span class="q-not">$$\\binom{n}{r} + \\binom{n}{r+1} = \\binom{n+1}{r+1}$$</span>
+    <!-- Binom ve multinom teoremi -->
+    <span class="q-not">$$(x+y)^n = \\sum_{k=0}^{n} \\binom{n}{k} x^{n-k} y^k$$</span>
+    <span class="q-not">$$\\binom{n}{n_1, n_2, \\dots, n_k} = \\frac{n!}{n_1!\\,n_2!\\cdots n_k!}$$</span>
+    <span class="q-not">$$(x_1+\\dots+x_k)^n = \\sum_{n_1+\\dots+n_k=n} \\binom{n}{n_1,\\dots,n_k} x_1^{n_1}\\cdots x_k^{n_k}$$</span>
+    <!-- Özel sayılar -->
+    <span class="q-not">$$\\text{Catalan: } C_n = \\frac{1}{n+1}\\binom{2n}{n}$$</span>
+    <span class="q-not">$$\\text{Stirling yaklaşımı: } n! \\approx \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^n$$</span>
+    </div>
+    
+    <!-- Olasılık -->
+    <div class="q-card">
+    <span class="q-not">$$\\mathbf{\\sigma \\text{-Cebir ve Ölçülebilir Uzay: } (\\Omega, \\mathcal{F})}$$</span>
+    <span class="q-not">$$\\Omega \\in \\mathcal{F}, \\quad A \\in \\mathcal{F} \\implies A^c \\in \\mathcal{F}, \\quad A_1, A_2, A_3, \\dots \\in \\mathcal{F} \\implies \\bigcup_{i=1}^{\\infty} A_i \\in \\mathcal{F}$$</span>
+    <span class="q-not">$$\\mathbf{ Kolmogorov \\text{ Aksiyomları ve Olasılık Uzayı: } (\\Omega, \\mathcal{F}, P)}$$</span>
+    <span class="q-not">$$P: \\mathcal{F} \\to [0, 1] \\quad \\bigg\\vert{} \\quad P(A) \\ge 0, \\quad P(\\Omega) = 1, \\quad (\\forall i \\neq j, \\; A_i \\cap A_j = \\emptyset) \\implies P\\left(\\bigcup_{i=1}^{\\infty} A_i\\right) = \\sum_{i=1}^{\\infty} P(A_i)$$</span>
+    <span class="q-not">$$P(A^c) = 1 - P(A)$$</span>
+    <span class="q-not">$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$</span>
+    <span class="q-not">$$P(A \\cup B \\cup C) = P(A) + P(B) + P(C) - P(A \\cap B) - P(A \\cap C) - P(B \\cap C) + P(A \\cap B \\cap C)$$</span>
+    <span class="q-not">$$P(A\\vert{}B) = \\frac{P(A \\cap B)}{P(B)}, \\quad P(B) > 0$$</span>
+    <span class="q-not">$$P(A \\cap B) = P(A\\vert{}B)P(B) = P(B\\vert{}A)P(A)$$</span>
+    <span class="q-not">$$A \\perp B \\iff P(A \\cap B) = P(A)P(B)$$</span>
+    <span class="q-not">$$A \\perp B \\implies P(A\\vert{}B) = P(A) \\land P(B\\vert{}A) = P(B)$$</span>
+    <span class="q-not">$$P(B) = \\sum_{i=1}^{n} P(B \\cap A_i) = \\sum_{i=1}^{n} P(B\\vert{}A_i)P(A_i)$$</span>
+    <span class="q-not">$$\\text{Bayes Teoremi: } P(A_k\\vert{}B) = \\frac{P(B\\vert{}A_k)P(A_k)}{\\sum_{i=1}^{n} P(B\\vert{}A_i)P(A_i)}$$</span>
+    </div>
+    
+    <!-- İstatistik -->
+    <div class="q-card">
+    <span class="q-not">$$X = \\{x_1, x_2, \\dots, x_n\\} \\land n \\in \\mathbb{Z}^+$$</span>
+    <span class="q-not">$$\\mu = \\frac{1}{n} \\sum_{i=1}^{n} x_i$$</span>
+    <span class="q-not">$$\\sigma^2 = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\mu)^2 \\lor s^2 = \\frac{1}{n - 1} \\sum_{i=1}^{n} (x_i - \\mu)^2$$</span>
+    <span class="q-not">$$\\sigma = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\mu)^2} \\lor s = \\sqrt{\\frac{1}{n - 1} \\sum_{i=1}^{n} (x_i - \\mu)^2}$$</span>
+    <span class="q-not">$$r = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})(y_i - \\bar{y})}{\\sqrt{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\sqrt{\\sum_{i=1}^{n} (y_i - \\bar{y})^2}}$$</span>
+    </div>
+    
+    <!-- Logaritma -->
+    <div class="q-card">
+        <span class="q-not">$$\\log_a x = y \\iff a^y = x \\quad , \\quad (a > 0) \\land (a \\neq 1) \\land (x > 0)$$</span>
+        <span class="q-not">$$\\log_{10} x = \\log x \\quad , \\quad \\log_e x = \\ln x \\quad , \\quad \\log_a 1 = 0 \\quad , \\quad \\log_a a = 1$$</span>
+        <span class="q-not">$$\\log_{a^m}(x^n) = \\frac{n}{m}\\log_a x \\quad , \\quad \\log_a(x^n) = n\\log_a x \\quad , \\quad a^{\\log_a x} = x$$</span>
+        <span class="q-not">$$\\log_a(u \\cdot v) = \\log_a u + \\log_a v \\quad , \\quad \\log_a\\!\\left(\\frac{u}{v}\\right) = \\log_a u - \\log_a v$$</span>
+        <span class="q-not">$$\\log_a b = \\frac{\\log_c b}{\\log_c a} = \\frac{1}{\\log_b a} \\quad , \\quad \\log_a b \\cdot \\log_b c = \\log_a c \\quad , \\quad a^{\\log_b c} = c^{\\log_b a}$$</span>
+        <span class="q-not">$$\\log_a f(x) = \\log_a g(x) \\implies f(x) = g(x) \\land f(x) > 0 \\land g(x) > 0$$</span>
+        <span class="q-not">$$\\big(a > 1 \\land \\log_a f(x) > \\log_a g(x)\\big) \\implies f(x) > g(x) > 0$$</span>
+        <span class="q-not">$$\\big(0 < a < 1 \\land \\log_a f(x) > \\log_a g(x)\\big) \\implies 0 < f(x) < g(x)$$</span>
+    </div>
+    <!-- Trigonometri -->
+    <div class="q-card">
+    <span class="q-not">$$\\sin\\theta = \\frac{k}{h} \\quad \\land \\quad \\cos\\theta = \\frac{m}{h}$$</span>
+    <span class="q-not">$$\\tan\\theta = \\frac{k}{m} = \\frac{\\sin\\theta}{\\cos\\theta} \\quad \\land \\quad \\cot\\theta = \\frac{m}{k} = \\frac{\\cos\\theta}{\\sin\\theta}$$</span>
+    <span class="q-not">$$\\sec\\theta = \\frac{1}{\\cos\\theta} \\quad \\land \\quad \\csc\\theta = \\frac{1}{\\sin\\theta}$$</span>
+    <span class="q-not">$$\\sin^2\\theta + \\cos^2\\theta = 1$$</span>
+    <span class="q-not">$$\\tan\\theta \\cdot \\cot\\theta = 1$$</span>
+    <span class="q-not">$$\\sec^2\\theta = 1 + \\tan^2\\theta \\quad \\land \\quad \\csc^2\\theta = 1 + \\cot^2\\theta$$</span>
+    <span class="q-not">$$\\theta = 0 \\implies (\\sin 0 = 0 \\land \\cos 0 = 1 \\land \\tan 0 = 0 \\land \\cot 0 = \\nexists)$$</span>
+    <span class="q-not">$$\\theta = \\frac{\\pi}{6} \\implies (\\sin\\frac{\\pi}{6} = \\frac{1}{2} \\land \\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2} \\land \\tan\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{3} \\land \\cot\\frac{\\pi}{6} = \\sqrt{3})$$</span>
+    <span class="q-not">$$\\theta = \\frac{\\pi}{4} \\implies (\\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2} \\land \\cos\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2} \\land \\tan\\frac{\\pi}{4} = 1 \\land \\cot\\frac{\\pi}{4} = 1)$$</span>
+    <span class="q-not">$$\\theta = \\frac{\\pi}{3} \\implies (\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2} \\land \\cos\\frac{\\pi}{3} = \\frac{1}{2} \\land \\tan\\frac{\\pi}{3} = \\sqrt{3} \\land \\cot\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{3})$$</span>
+    <span class="q-not">$$\\theta = \\frac{\\pi}{2} \\implies (\\sin\\frac{\\pi}{2} = 1 \\land \\cos\\frac{\\pi}{2} = 0 \\land \\tan\\frac{\\pi}{2} = \\nexists \\land \\cot\\frac{\\pi}{2} = 0)$$</span>
+    <span class="q-not">$$\\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b$$</span>
+    <span class="q-not">$$\\cos(a \\pm b) = \\cos a \\cos b \\mp \\sin a \\sin b$$</span>
+    <span class="q-not">$$\\tan(a \\pm b) = \\frac{\\tan a \\pm \\tan b}{1 \\mp \\tan a \\tan b}$$</span>
+    <span class="q-not">$$\\sin(2a) = 2 \\sin a \\cos a$$</span>
+    <span class="q-not">$$\\cos(2a) = \\cos^2 a - \\sin^2 a = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a$$</span>
+    <span class="q-not">$$\\tan(2a) = \\frac{2\\tan a}{1 - \\tan^2 a}$$</span>
+    <span class="q-not">$$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R$$</span>
+    <span class="q-not">$$a^2 = b^2 + c^2 - 2bc \\cos A$$</span>
+    <span class="q-not">$$\\sin x = \\sin a \\implies (x = a + 2k\\pi) \\lor (x = \\pi - a + 2k\\pi), \\quad k \\in \\mathbb{Z}$$</span>
+    <span class="q-not">$$\\cos x = \\cos a \\implies x = \\pm a + 2k\\pi, \\quad k \\in \\mathbb{Z}$$</span>
+    <span class="q-not">$$\\tan x = \\tan a \\implies x = a + k\\pi, \\quad k \\in \\mathbb{Z}$$</span>
+    <span class="q-not">$$\\forall x \\in [-1, 1] \\land \\forall y \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}] \\colon (\\arcsin x = y \\iff \\sin y = x)$$</span>
+    <span class="q-not">$$\\forall x \\in [-1, 1] \\land \\forall y \\in [0, \\pi] \\colon (\\arccos x = y \\iff \\cos y = x)$$</span>
+    <span class="q-not">$$\\forall x \\in \\mathbb{R} \\land \\forall y \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2}) \\colon (\\arctan x = y \\iff \\tan y = x)$$</span>
+    <span class="q-not">$$\\forall x \\in \\mathbb{R} \\land \\forall y \\in (0, \\pi) \\colon (\\operatorname{arccot} x = y \\iff \\cot y = x)$$</span>
+    <span class="q-not">$$\\forall f \\colon \\exists T > 0 \\colon (f(x+T) = f(x))$$</span>
+    <span class="q-not">$$T_{\\sin^n(ax+b)} = T_{\\cos^n(ax+b)} = \\begin{cases} \\frac{2\\pi}{\\vert{}a\\vert{}}, & n = 2k+1 \\\\ \\frac{\\pi}{\\vert{}a\\vert{}}, & n = 2k \\end{cases}, \\quad k \\in \\mathbb{Z}$$</span>
+    <span class="q-not">$$T_{\\tan^n(ax+b)} = T_{\\cot^n(ax+b)} = \\frac{\\pi}{\\vert{}a\\vert{}}, \\quad n \\in \\mathbb{Z}^+$$</span>
+    <span class="q-not">$$T_{f \\pm g} = \\operatorname{EKOK}(T_f, T_g)$$</span>
+    </div>
+    
+    <!-- Limit -->
+    <div class="q-card">
+    <span class="q-not">$$\\lim_{x \\to a} [f(x) \\pm g(x)] = \\lim_{x \\to a} f(x) \\pm \\lim_{x \\to a} g(x)$$</span>
+    <span class="q-not">$$\\lim_{x \\to a} [f(x) \\cdot g(x)] = \\left(\\lim_{x \\to a} f(x)\\right) \\cdot \\left(\\lim_{x \\to a} g(x)\\right)$$</span>
+    <span class="q-not">$$\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}, \\quad \\lim_{x \\to a} g(x) \\neq 0$$</span>
+    <span class="q-not">$$\\lim_{x \\to a} [c \\cdot f(x)] = c \\cdot \\lim_{x \\to a} f(x)$$</span>
+    <span class="q-not">$$\\lim_{x \\to a} [f(x)]^n = \\left(\\lim_{x \\to a} f(x)\\right)^n$$</span>
+    <span class="q-not">$$\\lim_{x \\to a} \\sqrt[n]{f(x)} = \\sqrt[n]{\\lim_{x \\to a} f(x)}$$</span>
+    <span class="q-not">$$\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1, \\quad \\lim_{x \\to 0} \\frac{\\tan x}{x} = 1$$</span>
+    <span class="q-not">$$\\lim_{x \\to 0} \\frac{\\sin(ax)}{bx} = \\frac{a}{b}, \\quad \\lim_{x \\to 0} \\frac{\\tan(ax)}{bx} = \\frac{a}{b}$$</span>
+    <span class="q-not">$$\\lim_{x \\to 0} \\frac{1 - \\cos x}{x} = 0, \\quad \\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2} = \\frac{1}{2}$$</span>
+    <span class="q-not">$$\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\lim_{x \\to a} \\frac{f'(x)}{g'(x)} \\quad \\text{if } \\frac{f(a)}{g(a)} \\in \\left\\{\\frac{0}{0}, \\frac{\\infty}{\\infty}\\right\\}$$</span>
+    <span class="q-not">$$h(x) \\le f(x) \\le g(x) \\implies \\lim_{x \\to a} h(x) \\le \\lim_{x \\to a} f(x) \\le \\lim_{x \\to a} g(x)$$</span>
+    <span class="q-not">$$\\lim_{x \\to a} h(x) = \\lim_{x \\to a} g(x) = L \\implies \\lim_{x \\to a} f(x) = L$$</span>
+    </div>
+    
+    <!-- Türev -->
+    <div class="q-card">
+    <span class="q-not">$$\\frac{d}{dx}(c) = 0$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(x^n) = n x^{n-1}$$</span>
+    <span class="q-not">$$\\frac{d}{dx}[c \\cdot f(x)] = c \\cdot f'(x)$$</span>
+    <span class="q-not">$$\\frac{d}{dx}[f(x) \\pm g(x)] = f'(x) \\pm g'(x)$$</span>
+    <span class="q-not">$$\\frac{d}{dx}[f(x) \\cdot g(x)] = f'(x)g(x) + f(x)g'(x)$$</span>
+    <span class="q-not">$$\\frac{d}{dx}\\left[\\frac{f(x)}{g(x)}\\right] = \\frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$$</span>
+    <span class="q-not">$$\\frac{d}{dx}[f(g(x))] = f'(g(x)) \\cdot g'(x)$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(e^x) = e^x \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(a^x) = a^x \\ln a$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\ln x) = \\frac{1}{x} \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\log_a x) = \\frac{1}{x \\ln a}$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\sin x) = \\cos x \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\cos x) = -\\sin x$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\tan x) = \\sec^2 x \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\cot x) = -\\csc^2 x$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\sec x) = \\sec x \\tan x \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\csc x) = -\\csc x \\cot x$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\arcsin x) = \\frac{1}{\\sqrt{1 - x^2}} \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\arccos x) = -\\frac{1}{\\sqrt{1 - x^2}}$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\arctan x) = \\frac{1}{1 + x^2} \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\operatorname{arccot} x) = -\\frac{1}{1 + x^2}$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\operatorname{arcsec} x) = \\frac{1}{\\vert{}x\\vert{}\\sqrt{x^2 - 1}} \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\operatorname{arccsc} x) = -\\frac{1}{\\vert{}x\\vert{}\\sqrt{x^2 - 1}}$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\sinh x) = \\cosh x \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\cosh x) = \\sinh x$$</span>
+    <span class="q-not">$$\\frac{d}{dx}(\\tanh x) = \\operatorname{sech}^2 x \\quad \\Big\\vert{} \\quad \\frac{d}{dx}(\\operatorname{coth} x) = -\\operatorname{csch}^2 x$$</span>
+    </div>
+    
+    <!-- İntegral -->
+    <div class="q-card">
+    <span class="q-not">$$\\int f(x) \\, dx = F(x) + c \\iff \\frac{d}{dx}[F(x)] = f(x)$$</span>
+    <span class="q-not">$$\\int k \\, dx = kx + c \\quad (k \\in \\mathbb{R})$$</span>
+    <span class="q-not">$$\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + c \\quad (n \\in \\mathbb{R} \\land n \\neq -1)$$</span>
+    <span class="q-not">$$\\int x^{-1} \\, dx = \\int \\frac{1}{x} \\, dx = \\ln\\vert{}x\\vert{} + c \\quad (x \\neq 0)$$</span>
+    <span class="q-not">$$\\int e^x \\, dx = e^x + c$$</span>
+    <span class="q-not">$$\\int a^x \\, dx = \\frac{a^x}{\\ln a} + c \\quad (a \\in \\mathbb{R}^+ \\setminus \\{1\\})$$</span>
+    <span class="q-not">$$\\int k \\cdot f(x) \\, dx = k \\int f(x) \\, dx \\quad (k \\in \\mathbb{R})$$</span>
+    <span class="q-not">$$\\int [f(x) \\pm g(x)] \\, dx = \\int f(x) \\, dx \\pm \\int g(x) \\, dx$$</span>
+    <span class="q-not">$$\\int \\sin x \\, dx = -\\cos x + c$$</span>
+    <span class="q-not">$$\\int \\cos x \\, dx = \\sin x + c$$</span>
+    <span class="q-not">$$\\int \\tan x \\, dx = -\\ln\\vert{}\\cos x\\vert{} + c = \\ln\\vert{}\\sec x\\vert{} + c$$</span>
+    <span class="q-not">$$\\int \\cot x \\, dx = \\ln\\vert{}\\sin x\\vert{} + c$$</span>
+    <span class="q-not">$$\\int \\sec^2 x \\, dx = \\tan x + c$$</span>
+    <span class="q-not">$$\\int \\csc^2 x \\, dx = -\\cot x + c$$</span>
+    <span class="q-not">$$\\int \\sec x \\tan x \\, dx = \\sec x + c$$</span>
+    <span class="q-not">$$\\int \\csc x \\cot x \\, dx = -\\csc x + c$$</span>
+    <span class="q-not">$$\\int \\frac{1}{\\sqrt{1 - x^2}} \\, dx = \\arcsin x + c \\quad (\\vert{}x\\vert{} < 1)$$</span>
+    <span class="q-not">$$\\int \\frac{1}{1 + x^2} \\, dx = \\arctan x + c \\quad (x \\in \\mathbb{R})$$</span>
+    <span class="q-not">$$\\int \\frac{1}{\\vert{}x\\vert{}\\sqrt{x^2 - 1}} \\, dx = \\operatorname{arcsec} x + c \\quad (\\vert{}x\\vert{} > 1)$$</span>
+    <span class="q-not">$$\\int_{a}^{b} f(x) \\, dx = \\Big[ F(x) \\Big]_{a}^{b} = F(b) - F(a)$$</span>
+    <span class="q-not">$$\\int_{a}^{a} f(x) \\, dx = 0$$</span>
+    <span class="q-not">$$\\int_{a}^{b} f(x) \\, dx = -\\int_{b}^{a} f(x) \\, dx$$</span>
+    <span class="q-not">$$\\int_{a}^{b} f(x) \\, dx = \\int_{a}^{c} f(x) \\, dx + \\int_{c}^{b} f(x) \\, dx \\quad (a < c < b)$$</span>
+    <span class="q-not">$$\\int_{a}^{b} k \\cdot f(x) \\, dx = k \\int_{a}^{b} f(x) \\, dx \\quad (k \\in \\mathbb{R})$$</span>
+    <span class="q-not">$$\\int_{a}^{b} [f(x) \\pm g(x)] \\, dx = \\int_{a}^{b} f(x) \\, dx \\pm \\int_{a}^{b} g(x) \\, dx$$</span>
+    <span class="q-not">$$\\forall x \\in [a, b], \\; f(x) \\ge g(x) \\implies \\int_{a}^{b} f(x) \\, dx \\ge \\int_{a}^{b} g(x) \\, dx$$</span>
+    </div>
+    
+    <!-- xxxx -->
+    <div class="q-card">
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    <span class="q-not">XXXX</span>
+    </div>
+</div>
+`

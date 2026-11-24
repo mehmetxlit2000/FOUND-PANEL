@@ -94,27 +94,14 @@
   </style>
 
 
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-  </script>
 
-  <script type="text/javascript" id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-  </script>
 
 </head>
 
   <body quasar-performance="false" quasar-thema="main" quasar-observer="'QuasarSynapseTem','#q-synapse-container','build/dist/css/static/synapse.css','build/dist/js/layout/QuasarSynapseCanvas.js'">
-<!--<body quasar-performance="false" >-->
-<!--<div quasar-observer="'QuasarQuiz','#q-panel .q-right', 'build/dist/css/static/quiz.css', 'null'"></div>-->
+<!--  <body quasar-performance="false" quasar-thema="main">-->
+<!--<div quasar-observer="'QuasarQuiz','#quasar-main', 'build/dist/css/static/quiz.css', 'null'"></div>-->
+<!--<div quasar-observer="'QuasarCode','#quasar-main', 'build/dist/css/static/codeEditor.css - build/dist/css/static/cards.css', 'build/dist/js/core/QuasarInfiniteScroll.js - build/dist/js/layout/QuasarCodeData.js - build/dist/js/layout/QuasarCodeEditorHelper.js'"></div>-->
 <section id="q-synapse-container"></section>
 
 <header id="q-header" quasar-observer="'null','null','null','build/dist/js/layout/QuasarHeaderCanvas.js'">
@@ -171,22 +158,20 @@
         </div>
       </div>
     </div>
-
   </div>
 </header>
 
 <section id="q-panel" quasar-observer="'null','null','null','build/dist/js/layout/QuasarPanelData.js'">
   <div class="q-container">
-    <div class="q-content"  >
+    <div class="q-content">
       <div class="q-left" id="q-sidebar">
-        <nav class="q-sidebar" >
+        <nav class="q-sidebar">
           <div class="q-container">
             <div id="q-side_bar"  class="q-content __quasar__scroll__x">
               <div class="q-side_bar_skeleton_groups">
                 <div class="q-up">
                   <div class="q-side_bar_skeleton __quasar__skeleton b1 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b1"></div>
                 </div>
-
                 <div class="q-cards">
                   <div class="q-side_bar_skeleton_group">
                     <div class="q-side_bar_skeleton __quasar__skeleton b2 t1"></div> <div class="q-side_bar_skeleton __quasar__skeleton b2"></div>
@@ -266,29 +251,26 @@
           </div>
         </nav>
       </div>
-      <div class="q-right" style="padding: 0">
-        <iframe
-                width="100%"
-                height="100vh"
-                title="blackhole"
-                frameborder="0"
-                allowfullscreen
-                class="q-dash-frame"
-                allow="autoplay; fullscreen; xr-spatial-tracking"
-                data-src="https://mehmetxlit2000.github.io/BLACK-HOLE-MODEL-1/">
-        </iframe>
-        <img src="https://i.pinimg.com/originals/63/47/84/6347845a7f9c0c67c9452f15354a0bb0.gif" class="q-dash-img __quasar__color__filter">
+      <div id="quasar-main" class="q-right">
+        <quasar-starter>
+          <iframe
+                  width="100%"
+                  height="100vh"
+                  title="blackhole"
+                  frameborder="0"
+                  allowfullscreen
+                  class="q-dash-frame"
+                  allow="autoplay; fullscreen; xr-spatial-tracking"
+                  data-src="https://mehmetxlit2000.github.io/BLACK-HOLE-MODEL-1/">
+          </iframe>
+          <img src="https://i.pinimg.com/originals/63/47/84/6347845a7f9c0c67c9452f15354a0bb0.gif" class="q-dash-img __quasar__color__filter">
+        </quasar-starter>
       </div>
     </div>
   </div>
 </section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dart.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/delphi.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/x86asm.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/armasm.min.js" defer></script>
-<script id="quasar-main-js">
 
+<script id="quasar-main-js">
   if (document.body.getAttribute('quasar-thema') === "dark") {
     document.addEventListener("DOMContentLoaded", () => {
       const QuasarIframe = document.querySelector('.q-dash-frame');
@@ -297,36 +279,79 @@
       }
     });
   }
-
 </script>
 
-<!--<script>-->
-<!--  const jsContainer = document.getElementById('quasar-main-js');-->
-
-<!--  const links = [-->
-<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",-->
-<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dart.min.js",-->
-<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/delphi.min.js",-->
-<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/x86asm.min.js",-->
-<!--    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/armasm.min.js"-->
-
-<!--  ];-->
-
-<!--  links.forEach(l => {-->
-<!--    let scriptLink = document.createElement('script');-->
-<!--    scriptLink.src = l;-->
-<!--    scriptLink.type = 'text/javascript';-->
-<!--    scriptLink.async = false;-->
-<!--    jsContainer.insertAdjacentElement('beforebegin', scriptLink)-->
-<!--  });-->
-<!--</script>-->
 
 <script type="text/javascript" src="build/dist/js/core/QuasarScriptorium.js" defer></script>
 
 <!--<script type="text/javascript" src="build/dist/js/layout/panelData.js" defer></script>-->
-<script type="text/javascript" src="build/dist/js/layout/vh.js" defer></script>
 
 
+
+<!--<script>-->
+<!--  (() => {-->
+<!--    const lcpEntries = [];-->
+
+<!--    // 1. LCP adaylarını ve son LCP değerini yakala-->
+<!--    const lcpObserver = new PerformanceObserver((list) => {-->
+<!--      for (const entry of list.getEntries()) {-->
+<!--        lcpEntries.push({-->
+<!--          loadTimeMs: Number(entry.startTime.toFixed(1)),-->
+<!--          renderTimeMs: entry.renderTime ? Number(entry.renderTime.toFixed(1)) : 0,-->
+<!--          element: entry.element-->
+<!--                  ? `${entry.element.tagName.toLowerCase()}${entry.element.id ? '#' + entry.element.id : ''}${entry.element.className ? '.' + String(entry.element.className).trim().split(/\s+/).join('.') : ''}`-->
+<!--                  : '(silinmiş element)',-->
+<!--          url: entry.url || '(metin / inline element)',-->
+<!--          size: entry.size-->
+<!--        });-->
+<!--      }-->
+<!--    });-->
+
+<!--    try {-->
+<!--      lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });-->
+<!--    } catch (e) {-->
+<!--      console.warn('Tarayıcı largest-contentful-paint desteklemiyor:', e);-->
+<!--    }-->
+
+<!--    // 2. Sayfa tamamen yüklendiğinde LCP ve en yavaş kaynakları konsola yazdır-->
+<!--    window.addEventListener('load', () => {-->
+<!--      setTimeout(() => {-->
+<!--        lcpObserver.disconnect();-->
+
+<!--        const finalLcp = lcpEntries[lcpEntries.length - 1];-->
+<!--        console.group('🚀 LCP & Yavaş Kaynak Analizi');-->
+
+<!--        if (finalLcp) {-->
+<!--          console.log('📌 Final LCP:', `${finalLcp.loadTimeMs} ms`, '| Element:', finalLcp.element, '| Kaynak:', finalLcp.url);-->
+<!--          console.table(lcpEntries);-->
+<!--        } else {-->
+<!--          console.log('LCP verisi oluşmadı (sayfada büyük bir metin veya görsel olmayabilir).');-->
+<!--        }-->
+
+<!--        // 3. En yavaş yüklenen kaynakları (duration + transferSize) sırala-->
+<!--        const resources = performance.getEntriesByType('resource')-->
+<!--                .map((r) => ({-->
+<!--                  name: r.name.split('?')[0].slice(-70),-->
+<!--                  fullUrl: r.name,-->
+<!--                  type: r.initiatorType,-->
+<!--                  durationMs: Number(r.duration.toFixed(1)),-->
+<!--                  ttfbMs: Number((r.responseStart - r.requestStart).toFixed(1)),-->
+<!--                  sizeKB: Number(((r.encodedBodySize || 0) / 1024).toFixed(1))-->
+<!--                }))-->
+<!--                .sort((a, b) => b.durationMs - a.durationMs);-->
+
+<!--        console.log('🐢 En Yavaş Yüklenen Kaynaklar (Süreye Göre):');-->
+<!--        console.table(resources.slice(0, 15));-->
+
+<!--        const heaviest = [...resources].sort((a, b) => b.sizeKB - a.sizeKB);-->
+<!--        console.log('📦 En Ağır Kaynaklar (Boyuta Göre):');-->
+<!--        console.table(heaviest.slice(0, 10));-->
+
+<!--        console.groupEnd();-->
+<!--      }, 1000);-->
+<!--    });-->
+<!--  })();-->
+<!--</script>-->
 
 </body>
 </html>
