@@ -1,0 +1,51 @@
+.kt-kod{--kt-bg:#000;--kt-fg:#878787;--kt-num:#777777;--kt-key:#ff001e;--kt-fn:#ff073a;--kt-m:#ff073a;--kt-str:#e0446d;--kt-mut:#8a3a3a;--kt-line:#222222;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:block;box-sizing:border-box;width:min(90%,1180px);margin:0 auto;background:var(--kt-bg);color:var(--kt-fg);border:1px solid var(--kt-line);border-radius:8px;overflow:hidden;
+    font-family:Consolas,ui-monospace,SFMono-Regular,Menlo,"Courier New",monospace;font-size:15px;line-height:21px;tab-size:4;white-space:pre;text-align:left;
+}
+
+/*.kt-active{*/
+/*            display: block;*/
+/*    position: absolute;*/
+/*        top: 50%;*/
+/*        left: 50%;*/
+/*        transform: translate(-50%,-50%);*/
+/*        }*/
+
+.kt-kod-relative{
+    width: 100%;
+    /*height: 500px;*/
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.60);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*display: none;*/
+    z-index: 10;
+    &.kt-active{
+        display: block;
+    }
+}
+.kt-kod *{box-sizing:border-box}
+.kt-kod .kt-bar{display:flex;align-items:center;gap:8px;height:34px;padding:0 14px;background:#0b0b0b;border-bottom:1px solid var(--kt-line)}
+.kt-kod .kt-d{display:inline-block;width:11px;height:11px;border-radius:50%}
+.kt-kod .kt-lang{margin-left:auto;font-size:12px;color:var(--kt-num)}
+.kt-kod .kt-body{padding:14px 0;max-height:672px;overflow:auto;scrollbar-width:none;-ms-overflow-style:none}
+.kt-kod .kt-body::-webkit-scrollbar{display:none}
+.kt-kod .kt-row{display:flex;min-height:21px;width:max-content;min-width:100%}
+.kt-kod .kt-n{flex:none;width:50px;padding-right:16px;margin-right:12px;text-align:right;color:var(--kt-num);font-size:12px;user-select:none;position:sticky;left:0;background:var(--kt-bg)}
+.kt-kod .kt-c{flex:1;padding-right:24px}
+.kt-kod .hljs-keyword,.kt-kod .hljs-built_in,.kt-kod .hljs-literal,.kt-kod .hljs-selector-tag,.kt-kod .hljs-doctag,
+.kt-kod .hljs-type,.kt-kod .hljs-tag,.kt-kod .hljs-name{color:var(--kt-key);font-weight:700}
+.kt-kod .hljs-string,.kt-kod .hljs-number,.kt-kod .hljs-regexp,.kt-kod .hljs-symbol,.kt-kod .hljs-template-variable,
+.kt-kod .hljs-attr,.kt-kod .hljs-attribute,.kt-kod .hljs-property,.kt-kod .hljs-selector-class,.kt-kod .hljs-selector-id{color:var(--kt-str);font-weight:400}
+.kt-kod .hljs-title.function_,.kt-kod .hljs-title.class_{color:var(--kt-fn);font-weight:700}
+.kt-kod .kt-m{color:var(--kt-m);font-weight:400}
+.kt-kod .hljs-comment,.kt-kod .hljs-quote{color:var(--kt-mut);font-style:italic;font-weight:400}
+.kt-kod .hljs-subst,.kt-kod .hljs-params,.kt-kod .hljs-variable,.kt-kod .hljs-operator,.kt-kod .hljs-punctuation{color:var(--kt-fg);font-weight:400}
