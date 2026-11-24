@@ -1,1 +1,0 @@
-export const template = `<span style="font-size: 50px; color: red">DENEMEE</span>`
